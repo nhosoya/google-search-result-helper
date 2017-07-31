@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         google-search-result-helper
 // @namespace    https://github.com/nhosoya
-// @version      0.1
+// @version      0.2.0
 // @description  Shortcut(j, k, /) for Google search result
 // @author       nhosoya
 // @match        https://www.google.co.jp/search?q=*
