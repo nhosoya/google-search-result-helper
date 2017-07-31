@@ -22,19 +22,25 @@
     };
 
     var i = -1;
+    var resultLinks = $('.g .r a:not(".l")');
 
     let shortcutJ = function() {
         i++;
-        if (i < 0) i = 0;
-        $('.g .r a:not(".l")')[i].focus();
+        validateIndex();
+        resultLinks[i].focus();
         return false;
     };
 
     let shortcutK = function() {
         i--;
-        if (i < 0) i = 0;
-        $('.g .r a:not(".l")')[i].focus();
+        validateIndex();
+        resultLinks[i].focus();
         return false;
+    };
+
+    let validateIndex = function() {
+        i = Math.max(i, 0);
+        i = Math.min(i, resultLinks.length - 1);
     };
 
     key('/', shortcutSlash);
