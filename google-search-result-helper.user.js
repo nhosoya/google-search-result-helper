@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         JKSlash Google
+// @name         google-search-result-helper
 // @namespace    https://github.com/nhosoya
 // @version      0.1
-// @description  Shortcut(j, k, /) for Google Search Result
+// @description  Shortcut(j, k, /) for Google search result
 // @author       nhosoya
 // @match        https://www.google.co.jp/search?q=*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/keymaster/1.6.1/keymaster.min.js
