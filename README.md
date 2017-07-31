@@ -1,6 +1,8 @@
 # google-search-result-helper
 Shortcut helper for page of Google's search result.
 
+<img src="https://github.com/nhosoya/google-search-result-helper/raw/master/google-search-result-helper.gif" width="320" />
+
 ## Installation
 
 * Install [Tampermonkey](http://tampermonkey.net).
