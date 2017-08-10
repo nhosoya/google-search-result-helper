@@ -16,8 +16,10 @@
 
     let shortcutSlash = function() {
         let searchBox = $('#lst-ib');
+        var temp = searchBox.val();
         searchBox.focus();
-        searchBox.val(searchBox.val());
+        searchBox.val('');
+        searchBox.val(temp);
         return false;
     };
 
