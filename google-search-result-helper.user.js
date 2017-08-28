@@ -14,7 +14,7 @@
 (function() {
     'use strict';
 
-    let shortcutSlash = function() {
+    let focusSearchBox = function() {
         let searchBox = $('#lst-ib');
         var temp = searchBox.val();
         searchBox.focus();
@@ -26,14 +26,14 @@
     var i = -1;
     var resultLinks = $('.g .r a:not(".l")');
 
-    let shortcutJ = function() {
+    let focusNextLink = function() {
         i++;
         validateIndex();
         resultLinks[i].focus();
         return false;
     };
 
-    let shortcutK = function() {
+    let focusPreviousLink = function() {
         i--;
         validateIndex();
         resultLinks[i].focus();
@@ -45,7 +45,7 @@
         i = Math.min(i, resultLinks.length - 1);
     };
 
-    key('/', shortcutSlash);
-    key('j', shortcutJ);
-    key('k', shortcutK);
+    key('/', focusSearchBox);
+    key('j', focusNextLink);
+    key('k', focusPreviousLink);
 })();
