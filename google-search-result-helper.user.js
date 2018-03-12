@@ -45,7 +45,16 @@
         i = Math.min(i, resultLinks.length - 1);
     };
 
+    let startImageSearch = function() {
+        if (location.search.includes('tbm=isch')) {
+            return false;
+        }
+        location.href += "&tbm=isch";
+        return false;
+    };
+
     key('/', focusSearchBox);
     key('j', focusNextLink);
     key('k', focusPreviousLink);
+    key('i', startImageSearch);
 })();
