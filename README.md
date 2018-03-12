@@ -17,3 +17,5 @@ Shortcut helper for page of Google's search result.
   * Focus previous search result link.
 * <kbd>/</kbd>
   * Focus search text box.
+* <kbd>i</kbd>
+  * Change mode to image search.
