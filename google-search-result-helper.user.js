@@ -4,7 +4,8 @@
 // @version      0.2.3
 // @description  Shortcut(j, k, /) for Google search result
 // @author       nhosoya
-// @match        https://www.google.co.jp/search?*
+// @include      https://www.google.co.jp/search?*
+// @include      https://www.google.com/search?*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/keymaster/1.6.1/keymaster.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/Caret.js/0.3.1/jquery.caret.min.js
