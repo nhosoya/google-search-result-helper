@@ -25,7 +25,7 @@
     };
 
     var i = -1;
-    var resultLinks = $('.g .r a:not(".l")');
+    var resultLinks = $('.g .r a:not(".fl"):not(".ab_button")');
 
     let focusNextLink = function() {
         i++;
