@@ -16,7 +16,7 @@
     'use strict';
 
     let focusSearchBox = function() {
-        let searchBox = $('#lst-ib');
+        let searchBox = $("form[role='search'] input[type='text']");
         var temp = searchBox.val();
         searchBox.focus();
         searchBox.val('');
