@@ -25,7 +25,7 @@
     };
 
     var i = -1;
-    var resultLinks = $('.g .r a:not(".fl"):not(".ab_button")');
+    var resultLinks = $('.g .r a:not(".fl"):not(".ab_button"):not(".GHDvEf")');
 
     let focusNextLink = function() {
         i++;
