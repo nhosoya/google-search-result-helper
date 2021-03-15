@@ -12,50 +12,50 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-    'use strict';
+(function () {
+  "use strict";
 
-    let focusSearchBox = function() {
-        let searchBox = $("form[role='search'] input[type='text']");
-        var temp = searchBox.val();
-        searchBox.focus();
-        searchBox.val('');
-        searchBox.val(temp);
-        return false;
-    };
+  let focusSearchBox = function () {
+    let searchBox = $("form[role='search'] input[type='text']");
+    var temp = searchBox.val();
+    searchBox.focus();
+    searchBox.val("");
+    searchBox.val(temp);
+    return false;
+  };
 
-    var i = -1;
-    var resultLinks = $('.g .r a:not(".fl"):not(".ab_button"):not(".GHDvEf")');
+  var i = -1;
+  var resultLinks = $('.g .r a:not(".fl"):not(".ab_button"):not(".GHDvEf")');
 
-    let focusNextLink = function() {
-        i++;
-        validateIndex();
-        resultLinks[i].focus();
-        return false;
-    };
+  let focusNextLink = function () {
+    i++;
+    validateIndex();
+    resultLinks[i].focus();
+    return false;
+  };
 
-    let focusPreviousLink = function() {
-        i--;
-        validateIndex();
-        resultLinks[i].focus();
-        return false;
-    };
+  let focusPreviousLink = function () {
+    i--;
+    validateIndex();
+    resultLinks[i].focus();
+    return false;
+  };
 
-    let validateIndex = function() {
-        i = Math.max(i, 0);
-        i = Math.min(i, resultLinks.length - 1);
-    };
+  let validateIndex = function () {
+    i = Math.max(i, 0);
+    i = Math.min(i, resultLinks.length - 1);
+  };
 
-    let startImageSearch = function() {
-        if (location.search.includes('tbm=isch')) {
-            return false;
-        }
-        location.href += "&tbm=isch";
-        return false;
-    };
+  let startImageSearch = function () {
+    if (location.search.includes("tbm=isch")) {
+      return false;
+    }
+    location.href += "&tbm=isch";
+    return false;
+  };
 
-    key('/', focusSearchBox);
-    key('j', focusNextLink);
-    key('k', focusPreviousLink);
-    key('i', startImageSearch);
+  key("/", focusSearchBox);
+  key("j", focusNextLink);
+  key("k", focusPreviousLink);
+  key("i", startImageSearch);
 })();
